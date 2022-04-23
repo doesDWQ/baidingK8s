@@ -1,0 +1,8 @@
+apiVersion: "example.com/v1"
+kind: Demo
+metadata:
+  name: crd-demo
+  #finalizers: # 等待控制器回收资源后再删掉此标记，之后才会删除当前资源
+  #  - example.com/finalizer
+spec:
+  name: test
